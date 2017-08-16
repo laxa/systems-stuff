@@ -55,6 +55,15 @@ On a default installation, some services are not needed and should be disabled, 
 * port 25 (smtp/mail server)
 * port 53 (dns)
 
+## Apache
+
+In file `/etc/apache2/apache2.conf`, set the following:
+```
+ServerTokens ProductOnly
+ServerSignature Off
+```
+This will disable the broadcast of apache2 version.
+
 ## Gnome configuration
 
 ### autolock with gnome-screensaver
