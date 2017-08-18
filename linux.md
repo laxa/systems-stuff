@@ -90,10 +90,17 @@ To remove this key and get back to current Ubuntu defaults:
 $ dconf reset /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/word-char-exceptions
 ```
 
+## Tricks
+
+This folder contains scripts that gets executed for every user on the system.
+```
+/etc/profile.d/
+```
+
 ## List of usefull packages
 
 ```
-apt-get install git emacs25-nox gdb valgrind subversion wget curl strace ltrace python-pip gcc screen sudo binwalk wipe nmap tcpdump
+apt-get install git emacs25-nox gdb valgrind subversion wget curl strace ltrace python-pip gcc screen sudo binwalk wipe nmap tcpdump zip 7z p7zip-full
 dpkg --add-architecture i386
 apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
 ```
