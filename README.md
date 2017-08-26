@@ -1,2 +1,4 @@
-# systems-stuff
-Hardening/cleaning of systems
+# Systems stuff/tricks
+* Hardening
+* Cleaning
+* Tricks
