@@ -26,3 +26,12 @@ Select the Disabled radio button.
 Restart the PC and Cortana and Bing Search will be disabled. (May work after signing out and in again)
 
 source: https://superuser.com/a/951895
+
+## Windows cached logons
+
+Login through networks can be cached by the system allowing users on the machine to potentially retrieve hash/creds on the machine, to check this settings, run:
+```
+REG QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v CachedLogonsCount
+```
+
+This value is set to 10 by default and you should be set to 0 for maximum security.
