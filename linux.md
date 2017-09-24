@@ -23,7 +23,7 @@ Set `DebianBanner` to `no` (depends on OS), prevents broadcasting system informa
 
 `AllowUsers` to only allow few users to use ssh
 
-### Disable password auth
+## Disable password auth
 To disable password authentication and just use RSA key auth:
 
 `UsePAM` to `no`
@@ -40,6 +40,17 @@ Be sure to check `ENCRYPT_METHOD` is using a secure hashing algorithm, it's also
 
 ```/etc/skel/``` contains file being copied for new user. It's important to check that other groups don't have rights on ```/home/xxx```.
 chmod /home directories
+
+## IPv6
+
+Put inside `/etc/sysctl.conf`
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
+
+Apply with `sysctl -p`
 
 ## APT
 
