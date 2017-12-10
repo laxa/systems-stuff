@@ -120,7 +120,7 @@ fi
 ## List of usefull packages
 
 ```
-apt-get install git emacs25-nox gdb valgrind subversion wget curl strace ltrace python-pip gcc screen sudo binwalk wipe nmap tcpdump zip p7zip-full
+apt-get install git emacs25-nox gdb valgrind subversion wget curl strace ltrace python-pip gcc screen sudo binwalk wipe nmap tcpdump zip p7zip-full socat libssl-dev python-pip
 dpkg --add-architecture i386
 apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
 ```
