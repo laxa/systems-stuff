@@ -1,5 +1,22 @@
 # Linux
 
+## General linux hardening
+
+### Disable ptrace
+
+Add `kernel.yama.ptrace_scope = 3` in `/etc/sysctl.conf` and use `sysctl -p` to activate the new setting, value `2` and `1` allow the use of ptrace for related processes, see the [doc](https://www.kernel.org/doc/Documentation/security/Yama.txt) for more information.
+
+### Hide the pid of process not owned
+
+To test dynamically:
+```
+mount -o remount,rw,hidepid=2 /proc
+```
+To make this changement at boot, this line needs to be added to the `/etc/fstab` file
+```
+proc /proc proc defaults,hidepid=2 0 0
+```
+
 ## Ssh configuration hardening
 
 ### New install
