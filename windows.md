@@ -39,8 +39,8 @@ This value is set to 10 by default and you should be set to 0 for maximum securi
 ## Disabling autorun
 
 The following keys have to be set to those values to disable autoplay/autorun on Windows:
-HK(LM|CU)\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer:
-NoDriveTypeAutoRun to 0xb5
-NoDriveAutoRun to 0x3FFFFFF
+`HK(LM|CU)\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer`:
+`NoDriveTypeAutoRun` to `0xb5`
+`NoDriveAutoRun` to `0x3FFFFFF`
 
 [Documentation](https://technet.microsoft.com/en-us/library/cc938275.aspx)
