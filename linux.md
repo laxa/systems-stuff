@@ -17,6 +17,14 @@ To make this changement at boot, this line needs to be added to the `/etc/fstab`
 proc /proc proc defaults,hidepid=2 0 0
 ```
 
+### Harden fs protections
+
+* https://www.cyberciti.biz/faq/linux-add-nodev-nosuid-noexec-options-to-temporary-storage-partitions/
+
+Maximize the `nosuid,noexec` on all fs that don't need it:
+* /dev/shm
+* /tmp
+
 ## Ssh configuration hardening
 
 ### New install
@@ -133,6 +141,8 @@ if [ ! -f /tmp/res ]; then
     echo 'Done' > /tmp/res
 fi
 ```
+
+You can mount remote filesystem thanks to ssh by using `gvfs` on gnome or `sshfs` on any system.
 
 ## List of usefull packages
 
