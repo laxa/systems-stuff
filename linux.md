@@ -25,6 +25,17 @@ Maximize the `nosuid,noexec` on all fs that don't need it:
 * /dev/shm
 * /tmp
 
+Those 2 lines can be added to `/etc/fstab`:
+```
+tmpfs /dev/shm tmpfs defaults,nodev,nosuid,noexec 0 0
+mqueue /dev/mqueue mqueue defaults,rw,relatime,noexec 0 0
+```
+or tested applied without reboot:
+```
+ mount -o remount,rw,relatime,noexec /dev/mqueue
+ mount -o remount,rw,nosuid,nodev,noexec /dev/shm
+```
+
 ## Ssh configuration hardening
 
 ### New install
