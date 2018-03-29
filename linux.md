@@ -17,6 +17,14 @@ To make this changement at boot, this line needs to be added to the `/etc/fstab`
 proc /proc proc defaults,hidepid=2 0 0
 ```
 
+### Hide syslog and kernel pointers to users
+
+Put this text into `/etc/sysctl.conf` and then run `sysctl -p` to update the changes:
+```
+kernel.dmesg_restrict = 1
+kernel.kptr_restrict = 1
+```
+
 ### Harden fs protections
 
 * https://www.cyberciti.biz/faq/linux-add-nodev-nosuid-noexec-options-to-temporary-storage-partitions/
