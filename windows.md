@@ -15,6 +15,13 @@ https://superuser.com/questions/1085680/windows-10-make-uac-always-require-passw
 
 Disabling crash reports: https://www.lifewire.com/how-do-i-disable-error-reporting-in-windows-2626074
 
+## Services to disable
+
+Access services with windows + r => `services.msc`:
+* WebClien
+* SSH Server Proxy
+* SSH Server Broker
+
 ## Cortana
 
 To disable Cortana in windows 10
