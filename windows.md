@@ -18,7 +18,7 @@ Disabling crash reports: https://www.lifewire.com/how-do-i-disable-error-reporti
 ## Services to disable
 
 Access services with windows + r => `services.msc`:
-* WebClien
+* WebClient
 * SSH Server Proxy
 * SSH Server Broker
 
