@@ -28,6 +28,7 @@ kernel.kptr_restrict = 1
 ### Harden fs protections
 
 * https://www.cyberciti.biz/faq/linux-add-nodev-nosuid-noexec-options-to-temporary-storage-partitions/
+* https://community.spiceworks.com/how_to/2220-create-and-protect-tmp-partition
 
 Maximize the `nosuid,noexec` on all fs that don't need it:
 * /dev/shm
