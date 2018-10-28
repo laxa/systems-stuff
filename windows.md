@@ -51,3 +51,12 @@ The following keys have to be set to those values to disable autoplay/autorun on
 `NoDriveAutoRun` to `0x3FFFFFF`
 
 [Documentation](https://technet.microsoft.com/en-us/library/cc938275.aspx)
+
+## Enable sandbox for Windows defender
+
+```
+setx /M MP_FORCE_USE_SANDBOX 1
+```
+And then restart the machine.
+
+[Documentation](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/)
