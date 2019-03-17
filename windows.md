@@ -60,3 +60,7 @@ setx /M MP_FORCE_USE_SANDBOX 1
 And then restart the machine.
 
 [Documentation](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/)
+
+## Enable pin authentication with Btilocker
+
+https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures
