@@ -64,3 +64,8 @@ And then restart the machine.
 ## Enable pin authentication with Btilocker
 
 https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures
+
+## Protect `lsass.exe` so it cannot be dumped
+
+Set registry key "RunAsPPL"=dword:00000001 in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa
+https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
