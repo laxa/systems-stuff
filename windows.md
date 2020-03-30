@@ -69,3 +69,7 @@ https://docs.microsoft.com/en-us/windows/security/information-protection/bitlock
 
 Set registry key "RunAsPPL"=dword:00000001 in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa
 https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
+
+## Activate DMA protection
+
+https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt
