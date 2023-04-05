@@ -45,6 +45,16 @@ or tested applied without reboot:
  mount -o remount,rw,nosuid,nodev,noexec /dev/shm
 ```
 
+### For allocation of new TTY for sudo
+
+To avoid this attack: https://www.errno.fr/TTYPushback.html
+
+Add this to `/etc/sudoers`
+
+```
+Defaults use_pty
+```
+
 ## Ssh configuration hardening
 
 ### New install
